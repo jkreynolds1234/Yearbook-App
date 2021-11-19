@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: freight;
+  src: url(https://cdn.glitch.com/f84da1ef-a648-4233-af6d-f359389b0bf8%2FFreight%20Text%20Book.otf?v=1619565910917);
+}
+
+@font-face {
+  font-family: freight;
+  src: url(https://cdn.glitch.com/f84da1ef-a648-4233-af6d-f359389b0bf8%2FFreight%20Text%20Bold.otf?v=1619565908128);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: freight;
+  src: url(https://cdn.glitch.com/f84da1ef-a648-4233-af6d-f359389b0bf8%2FFreight%20Text%20Black.otf?v=1619565905694);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: proximaNova;
+  src: url(https://cdn.glitch.com/f84da1ef-a648-4233-af6d-f359389b0bf8%2FProximaNova-Regular.otf?v=1619565926966);
+}
+
+@font-face {
+  font-family: proximaNova;
+  src: url(https://cdn.glitch.com/f84da1ef-a648-4233-af6d-f359389b0bf8%2FProxima%20Nova%20Bold.otf?v=1619565919402);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: proximaNova;
+  src: url(https://cdn.glitch.com/f84da1ef-a648-4233-af6d-f359389b0bf8%2FProxima%20Nova%20Extrabold.otf?v=1619565921972);
+  font-weight: 800;
+}
+
+header {
+  background: #022851;
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  align-items: center;
+}
+
+#classHead {
+  font-family: proximaNova;
+  font-weight: 800;
+  color: #ffbf00;
+  font-size: 40px;
+}
+
+.logoContainer {
+  height: 22px;
+  width: 122px;
+  padding-left: 30px;
+  
+}
+
+.logoContainer img {
+  height: 100%;
+  width: auto;
+}
+
+.picContainer {
+  width: 100vw;
+  height: 400px;
+  overflow: hidden;
+}
+
+.picContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  background-image: linear-gradient(180deg, rgba(255,216,95,1) 0%, rgba(255,191,0,1) 100%);
+  padding: 6px 10px 6px 10px;
+  font-family: proximaNova;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#search {
+  margin-right: 25px;
+}
+
+#login {
+  margin-right: 30px;
+  position: relative;
+}
+
+#tt {
+  font-weight: normal;
+  position: absolute;
+  top: 35px;
+  right: -70px;
+  color: white;
+  backgroundColor: transparent;
+  width: 400px;
+}
+
+#editQuestionnaire {
+  margin-right: 25px;
+}
+
+#gradList {
+  background: #022851;
+  height: 100vh;
+}
+
+#congrats {
+  font-family: proximaNova;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+#gradList div {
+  font-family: freight;
+  font-size: 18px;
+  color: white;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+
+#searchContainer {
+  height: 400px;
+  width: 100vw;
+  background: rgba(255,255,255,0.75);
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  font-family: proximaNova;
+  font-weight: bold;
+}
+
+#searchForm {
+  width: 40%;
+  margin: auto;
+  padding-bottom: 1vh;
+}
+
+#searchTitle {
+  padding-top: 2vh;
+  font-size: 35px;
+  margin: auto;
+  text-align: center;
+}
+
+#searchDescription {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #022851;
+  margin: auto;
+  text-align: center;
+}
+
+#searchQuestions {
+  margin: auto;
+  font-size: 20px;
+}
+
+.searchLabelAndBox {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1vh;
+}
+
+.searchLabelAndBox label {
+  flex-grow: 0;
+  padding-right: 1%;
+}
+
+.searchBox {
+  min-width: 0px;
+  flex-grow: 3;
+}
+
+#submitButton {
+  background-image: linear-gradient(180deg, rgba(255,216,95,1) 0%, rgba(255,191,0,1) 100%);
+  border: none;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 5px;
+  font-family: proximaNova;
+  font-weight: bold;
+  font-size: 16px;
+  width: 60px;
+  height: 35px;
+}
+
+#questionnaireForm {
+  padding-top: 4vh;
+  width: 40%;
+  height: 80vh;
+  font-family: proximaNova;
+  font-weight: bold;
+  margin: auto;
+}
+
+#questionnaireTitle {
+  font-size: 35px;
+  margin: auto;
+  text-align: center;
+}
+
+.questionnaireLabelAndBox {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1vh;
+}
+
+.questionnaireLabelAndBox label {
+  flex-grow: 0;
+  min-width: 0px;
+  padding-right: 1%;
+}
+
+.questionnaireBox {
+  min-width: 0px;
+  flex-grow: 5;
+}
+
+#bio {
+  width: 99%;
+  height: 400px;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 25px;
+  border: 1px solid black;
+}
+
+#cardImg {
+  display: none;
+  overflow: hidden;
+  max-width: 300px;
+  max-height: 200px; 
+}
+
+.profilePicContainer {
+  padding: 20px;
+  max-width: 300px;
+  max-height: 200px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.profilePic {
+  width: 100%;
+}
+
+.inputCentered {
+  text-align: center;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content:attr(data-text)
+}
+
+#welcomeHome {
+  font-family: proximaNova;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.searchPicContainer {
+  max-width: 300px;
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.searchPic {
+  width: 100%;
+  height: auto;
+}
+
+.searchNameContainer {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  display: none;
+}
+
+.searchName {
+  color: white;
+  left: 20px;
+  top: 50px;
+  padding-top: 10px;
+  display: none;
+}
+
+#logoff {
+  margin-right: 30px;
+}
+
+.photoGrid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
